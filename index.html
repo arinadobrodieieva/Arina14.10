@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <!-- 1. Кодування сторінки (обов'язково для коректного відображення кирилиці) -->
+    <meta charset="UTF-8">
+
+    <!-- 2. Адаптивність (щоб сайт гарно відображався на смартфонах та планшетах) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 3. Назва сторінки, яка відображається на вкладці браузера -->
+    <title>Вивчення тегів розділу HEAD</title>
+
+    <!-- 4. Опис сторінки для пошукових систем (Google, Bing тощо) -->
+    <meta name="description" content="Практичний приклад створення веб-сторінки з використанням службових тегів усередині контейнера head.">
+
+    <!-- 5. Ключові слова для пошуковиків (зараз використовуються рідко, але корисні для навчання) -->
+    <meta name="keywords" content="HTML, head, мета-теги, title, стилі, розробка сайтів">
+
+    <!-- 6. Ім'я автора сторінки -->
+    <meta name="author" content="Хацько Євгенія / Пилипенко Дмитро">
+
+    <!-- 7. Підключення іконки сайту (Favicon), яка відображається поруч із назвою вкладки -->
+    <link rel="icon" href="https://flaticon.com" type="image/png">
+
+    <!-- 8. Внутрішні стилі CSS для оформлення зовнішнього вигляду сторінки -->
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        code {
+            background-color: #f8f9fa;
+            color: #e74c3c;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .tag-list {
+            background-color: #e8f4fd;
+            border-left: 5px solid #3498db;
+            padding: 15px 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Анатомія розділу &lt;head&gt;</h1>
+        <p>Контейнер <code>&lt;head&gt;</code> містить службову (технічну) інформацію про сторінку, яка <strong>не відображається безпосередньо у вікні браузера</strong>, але є критично важливою для пошукових систем, браузерів та коректного стилю сайту.</p>
+
+        <p>У коді цієї сторінки (всередині тегу head) ми використали такі елементи:</p>
+
+        <div class="tag-list">
+            <ul>
+                <li><code>&lt;meta charset="UTF-8"&gt;</code> — захищає текст від появи незрозумілих символів («ієрогліфів»).</li>
+                <li><code>&lt;meta name="viewport"&gt;</code> — робить сторінку зручною для мобільних телефонів.</li>
+                <li><code>&lt;title&gt;</code> — задає заголовок вкладки у вашому браузері.</li>
+                <li><code>&lt;meta name="description"&gt;</code> — це короткий текст, який показує Google у результатах пошуку.</li>
+                <li><code>&lt;link rel="icon"&gt;</code> — додає маленьку картинку (логотип) на вкладку сайту.</li>
+                <li><code>&lt;style&gt;</code> — містить CSS-код для оформлення шрифтів, кольорів та блоків.</li>
+            </ul>
+        </div>
+
+        <p>Щоб перевірити, як працюють ці теги, відкрийте цей файл у браузері та подивіться на <b>назву та іконку вкладки</b>, або натисніть клавіші <kbd>Ctrl</kbd> + <kbd>U</kbd>, щоб побачити весь прихований код сторінки.</p>
+    </div>
+
+</body>
+</html>
